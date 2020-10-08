@@ -5,9 +5,11 @@ Aplicativo de uma calculadora de pisos e revestimentos criado para disciplina de
 Tutorial de criação deste app: [clique aqui](https://medium.com/@kleberandrade/criando-um-aplicativo-em-flutter-para-calcular-a-quantidade-de-pisos-por-m%C2%B2-dac30b5b5027)
 
 <p align="center">
-    <img src="https://cdn-images-1.medium.com/max/400/1*-bDQqIcOqyc5-4qvQLBODQ.png" width="250"/>
-    <img src="https://cdn-images-1.medium.com/max/400/1*AcNqHgMroIwf2y7XAZHoGQ.png" width="250"/>
-    <img src="https://cdn-images-1.medium.com/max/400/1*B8I5SuZlGanHB8POBmBIZA.png" width="250"/>
+    <img src="assets/images/Tela1.jpg" width="250"/>
+    <img src="assets/images/Tela2.jpg" width="250"/>
+    <img src="assets/images/Tela3.jpg" width="250"/>
+    <img src="assets/images/Tela4.jpg" width="250"/>
+    <img src="assets/images/Tela5.jpg" width="250"/>
 </p>
 
 ## Desafio para aula
