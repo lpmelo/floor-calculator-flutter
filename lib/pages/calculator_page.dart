@@ -34,6 +34,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          Icon(Icons.calculate_outlined, size: 60.0, color: Colors.black),
+          _buildVerticalSpace(),
           _buildHeaderText('Dimensões do cômodo'),
           _buildVerticalSpace(),
           _buildNumberInputField(
@@ -57,8 +59,15 @@ class _CalculatorPageState extends State<CalculatorPage> {
             'Comprimento (centímetros)',
             onSaved: _controller.setFloorLength,
           ),
+          _buildVerticalSpace(),
+          _buildNumberInputField(
+            'Preço (Formato decimal)',
+            onSaved: _controller.setFloorPrice,
+          ),
           _buildVerticalSpace(height: 40),
           _buildCalculateButton(),
+          _buildVerticalSpace(),
+          _buildCleanButton(),
         ],
       ),
     );
@@ -81,6 +90,10 @@ class _CalculatorPageState extends State<CalculatorPage> {
       child: const Text('CALCULAR'),
       onPressed: _calcular,
     );
+  }
+
+  _buildCleanButton() {
+    return RaisedButton(onPressed: _clean, child: const Text('LIMPAR'));
   }
 
   _buildHeaderText(String label) {
@@ -113,4 +126,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
       );
     }
   }
+
+  void _clean() => _formKey.currentState.reset();
 }

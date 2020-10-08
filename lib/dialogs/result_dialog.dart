@@ -24,6 +24,10 @@ class ResultDialog extends StatelessWidget {
             title: Text('${result.amountPiecesAndFooter} pisos'),
             subtitle: Text('Quantidade total de pisos'),
           ),
+          ListTile(
+            title: Text('O preço total é de: ${result.resultprice} reais'),
+            subtitle: Text('Preço total dos pisos'),
+          ),
           Divider(),
           ListTile(
             title: Text('${result.areaWithoutFooter.toStringAsFixed(2)} m²'),
