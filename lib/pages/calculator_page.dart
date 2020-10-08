@@ -61,7 +61,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
           ),
           _buildVerticalSpace(),
           _buildNumberInputField(
-            'Preço (Formato decimal)',
+            'Preço (Por m²)',
             onSaved: _controller.setFloorPrice,
           ),
           _buildVerticalSpace(height: 40),
